@@ -16,6 +16,8 @@ Program/script:
 Parameters:
 
     -windowstyle hidden -noprofile -executionpolicy bypass -file "C:\path\to\randLoginUI.ps1" "C:\path\to\wallpapers"
+    
+Check "Run with highest privileges"
   
 I bypass the execution policy since the default is typically "Restricted". The restricted policy prevents all scripts from running. I keep a separate directory for loginUI wallpapers since they need to meet the 256KB size requirement.
   
