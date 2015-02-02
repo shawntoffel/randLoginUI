@@ -15,7 +15,7 @@ Program/script:
     
 Parameters:
 
-    -windowstyle hidden -noprofile -executionpolicy bypass -file "PATH_TO_randLoginUI.ps1" WALL_DIRECTORY
+    -windowstyle hidden -noprofile -executionpolicy bypass -file "C:\path\to\randLoginUI.ps1" "C:\path\to\wallpapers"
   
-I bypass the execution policy since the default is typically "Restricted", which prevents all scripts from running. WALL_DIRECTORY is the location of the wallpapers the script will choose from. I keep a separate directory since they must meet the 256KB size requirement.
+I bypass the execution policy since the default is typically "Restricted". The restricted policy prevents all scripts from running. I keep a separate directory for loginUI wallpapers since they need to meet the 256KB size requirement.
   
