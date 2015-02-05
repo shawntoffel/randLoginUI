@@ -32,7 +32,7 @@ Function CopyRandomPicture($pictureDir) {
 	Copy-Item -Recurse -Force $picture ($loginBackgroundDir + $loginFilename)
 }
 
-Function SetRegestryProperty {
+Function SetRegistryProperty {
 	# location in registry
 	$path = 'hklm:software\microsoft\windows\currentversion\Authentication\LogonUI\Background'
 	$name = "OEMBackground"
@@ -50,7 +50,7 @@ Function SetRegestryProperty {
 }
 
 # Ensure the loginUI OEMBackground property is enabled in registry.
-SetRegestryProperty
+SetRegistryProperty
 
 # Overwrite random picture to loginUI OEMBackground directory
 CopyRandomPicture($Pictures)
